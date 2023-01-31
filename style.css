@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+}
+.conatainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    position: relative;
+    text-align: center;
+    right: 00px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    animation-name: title;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes title{
+    0%{
+        left: 0px;
+        color: orange;
+        letter-spacing: 4px;
+    }
+    40%{
+        transform: translate(60);
+        transform: rotate(-20deg);
+        color: rgb(90, 82, 82);
+        letter-spacing: 5px;
+    }
+    80%{
+        color: rgb(241, 10, 230);
+        letter-spacing: 6px;
+    }
+    100%{
+        left: 200px;
+        color: orangered;
+        letter-spacing: 7px;
+        transform: rotate(5deg);
+    }
+}
+.conatainer > .child{
+    background-color: rgb(185, 185, 185);
+    width: 350px;
+    height: 550px;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+.ima{
+    height: 350px;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.3;
+    transition: opacity 0.4s ease-out;
+}
+.ima1{
+    background-image: url('https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/2d814036-9b70-4ea8-916a-4c0b84f840d6');
+    background-size: cover;
+}
+.ima2{
+    background-image: url('https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/43583cb7-33aa-4a44-ad3b-1b8663b87d9f');
+    background-size: cover;
+}
+.ima3{
+    background-image: url('https://lexica-serve-encoded-images2.sharif.workers.dev/md2/e25bc2ac-0af2-470f-8e23-346f00ed03e3');
+    background-size: cover;
+}
+.ima4{
+    background-image: url('https://lexica-serve-encoded-images2.sharif.workers.dev/md2/0aaaf750-85b3-43d6-8545-44c1932fc119');
+    background-size: cover;
+}
+h2 {
+    font-family: serif;
+    text-align: center;
+}
+p {
+    font-weight: lighter;
+    text-align: center;
+}
+.ima:hover {
+    opacity: 1;
+    outline: none;
+}
+.child:hover {
+    box-shadow: 0 6px 13px 5px rgba(0, 0, 0, 0.2), 0 6px 22px rgba(0, 0, 0, 0.19);
+}
+.sec:hover {
+    background-color: rgb(148, 147, 147);
+}
+button{
+    position: relative;
+    right: 40px;
+    padding: 15px 10px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 4px;
+    width: 70px;
+    height: 50px;
+    transition: width 5s linear, border 5s linear;
+    margin-left: 90px;
+    top: -10px;
+    background-color: grey;
+    transition: width 2s;
+}
+button:hover {
+    cursor: pointer;
+    width: 170px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 2px 9px 6px rgba(0, 0, 0, 0.19);
+}
+.btn1{
+    background-color: orange;
+}
+.btn2{
+    background-color: rgb(90, 82, 82);
+}
+.btn3{
+    background-color: rgb(241, 10, 230);
+}
+.btn4{
+    background-color: orangered;
+}
